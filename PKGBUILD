@@ -12,7 +12,7 @@
 
 pkgname=mesa-git
 pkgdesc="an open-source implementation of the OpenGL specification, git version"
-pkgver=25.2.0_devel.206777.7bfb51a7e6f.d41d8cd
+pkgver=25.2.0_devel.207279.74526442b22.d41d8cd
 pkgrel=1
 arch=('x86_64')
 makedepends=(
@@ -257,7 +257,7 @@ build () {
         -D b_ndebug=true
         -D b_lto=false
         -D egl=enabled
-        -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,softpipe,llvmpipe,i915,iris,crocus,zink
+        -D gallium-drivers=virgl,svga,llvmpipe,i915,iris,zink
         -D gallium-extra-hud=true
         -D gallium-rusticl=${_rusticl}
         -D gallium-va=enabled
@@ -275,7 +275,7 @@ build () {
         -D platforms=x11,wayland
         -D valgrind=disabled
         -D video-codecs=all
-        -D vulkan-drivers=amd,intel,intel_hasvk,swrast,virtio,nouveau
+        -D vulkan-drivers=intel,swrast,virtio
         -D vulkan-layers=device-select,intel-nullhw,overlay
         -D tools=[]
         -D zstd=enabled
