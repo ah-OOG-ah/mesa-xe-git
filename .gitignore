@@ -3,3 +3,5 @@ mesa
 pkg
 src
 
+*.log
+*.gz
