@@ -12,7 +12,7 @@
 
 pkgname=mesa-git
 pkgdesc="an open-source implementation of the OpenGL specification, git version"
-pkgver=25.2.0_devel.208736.ea742877f6d.d41d8cd
+pkgver=25.3.0_devel.210150.f23d211b164.d41d8cd
 pkgrel=1
 arch=('x86_64')
 makedepends=(
@@ -267,7 +267,6 @@ build () {
         -D gles2=enabled
         -D glvnd=enabled
         -D glx=dri
-        -D intel-clc=enabled
         -D libunwind=enabled
         -D llvm=enabled
         -D lmsensors=enabled
